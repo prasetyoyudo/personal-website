@@ -1,0 +1,124 @@
+body{
+	background-color: #f2f2f2;
+}
+h2{
+	margin-bottom: 1rem;
+}
+/** 
+ * ===================================================================
+ * 3. PROFILE (MY BIO)
+ *
+ * ------------------------------------------------------------------- 
+ */
+ .submit{
+	width: 30% ;
+	margin-top: 10%
+}
+
+.submit button{
+	width: 100%
+}
+
+.submit a{
+	color: blue;
+}
+.submit a:hover{
+	text-decoration: none
+}
+
+@media only screen and (max-width: 800px) {
+	.submit	{
+	width: 100% ;
+	margin-top: 10%
+	}
+
+}
+
+.navbar a{
+ 	color: #94999c;
+
+ }
+ .navbar a:hover{
+ 	text-decoration: none
+
+ }
+ .navbar i.logout-link{
+ 	size: 1rem;
+ 		color: #94999c;
+
+ }
+ .banner{
+ 	text-align: center;
+ 	padding: 3rem;
+ 	background-color: #dfe4ea;
+
+ }
+ .profile { 
+	margin-top: 1rem; 
+	text-align: justify;
+	margin-bottom: 1rem
+
+}
+
+
+.profile p.my-profile {
+	margin-left: 20%;
+	margin-bottom: 0rem;
+}
+
+.profile img.profile-image {
+	display: block;
+	height: 8rem;
+	width: 8rem;
+	margin: 1rem auto;
+}
+
+.profile i.status{
+	margin-left: 33%;
+	color: yellow;
+	size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.sidebar-menu{
+	background-color: #212e36;
+	margin-bottom: 1rem;
+}
+
+.sidebar-menu li{
+	margin-top: 1rem;
+	list-style: none;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+.sidebar-menu li a:hover{
+	text-decoration: none;
+
+}
+
+.sidebar-menu li i{
+	margin-right: 0.5rem;
+	color: #94999c;
+}
+
+.sidebar-menu li span{
+	color: #94999c;
+}
+
+.sidebar-menu i.arrow{
+	float: right;
+	margin-top: 0.3rem
+}
+
+.comment {
+	margin-top: 1rem;
+}
+
+.comment table td,th{
+	padding: 0.8rem;
+}
+
+.comment table td{
+	background-color: #ecf0f1
+}

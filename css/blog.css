@@ -1,0 +1,382 @@
+/**
+ * ===================================================================
+ ======================DOCUMENTATION CSS==============================
+ * 1.	ALL CLASSES
+ * 2.	BANNER HEADER
+ * 2.1. BANNER HEADER (RESPONSIVE DISPLAY)
+ * 3.	PROFILE (MY BIO)
+ * 3.1. PROFILE (MY ARTICLE)
+ * 3.2.	PROFILE (MY ARTICLE)-(RESPONSIVE DISPLAY)
+ * 4.	GALLERY
+ * 4.1. GALLERY (RESPONSIVE DISPLAY)
+ * 5.	FOOTER
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * ===================================================================
+ * 1. ALL CLASSES
+ *
+ * -------------------------------------------------------------------
+ */
+
+body, html {
+    background: url(../images/bg-blog.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1366px) {
+	body {
+	height: 100%;
+    background-attachment: scroll;
+	}
+}
+
+h2 {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 2.5rem;
+}
+
+h3 {
+	color: #ef5777;
+	font-weight: bold !important;
+	margin-top: 1rem;
+}
+
+/**
+ * ===================================================================
+ * 2. BANNER HEADER
+ *
+ * -------------------------------------------------------------------
+ */
+
+.parallax-blog {
+    background-image: url('../images/blog/book.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: lora-regular;
+} 
+
+.parallax-blog h2 {
+	font-size: 4rem
+}
+
+.parallax-blog i {
+	font-size: 3rem;
+	letter-spacing: 1rem;
+	color: white;
+	margin-top: 1rem;
+}
+
+.parallax-blog i:hover {
+	color: #ef5777;
+}
+
+/**
+ * ===================================================================
+ * 2.1. BANNER HEADER(RESPONSIVE DISPLAY)
+ *
+ * -------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 700px) {
+	.parallax-blog {
+	height: 80%;
+	font-family: lora-regular;
+	background-attachment: scroll;
+
+}
+
+	.parallax-blog h3{
+	font-size: 1.5rem;
+	}
+
+	.parallax-blog h2.sub-judul{
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	text-align: center;
+	font-size: 2rem;
+	}
+
+	.parallax-blog i{
+	font-size: 1.8rem;
+	letter-spacing: 1rem;
+	color: white;
+	margin-top: 0rem;
+	}
+
+}
+
+/**
+ * ===================================================================
+ * 3. PROFILE (MY BIO)
+ *
+ * -------------------------------------------------------------------
+ */
+ .blog {
+	padding: 1rem ;
+	margin-top: 1rem;
+	text-align: justify;
+}
+
+.blog h2 {
+	text-align: left !important;
+	color: black
+}
+
+.blog p {
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.blog img.profile-image {
+	display: block;
+	height: 8rem;
+	width: 8rem;
+	border-radius: 50%;
+	margin: 1rem auto;
+}
+
+/**
+ * ===================================================================
+ * 3.1. PROFILE (MY ARTICLE)
+ *
+ * -------------------------------------------------------------------
+ */
+.article .post-head {
+	margin-top: 1rem;
+	padding: 1rem 0;
+	text-align: left;
+}
+
+.article .post-art {
+	margin-bottom: 2rem;
+}
+
+.article img.post-art {
+	height: 12rem;
+}
+
+.article .post-art p {
+	margin-top: -0.5rem;
+}
+
+.article .post-art .meta {
+	margin-bottom: 2rem;
+}
+
+.article .post-art li {
+	list-style: none;
+}
+
+.article .post-art hr {
+	border-color: black;
+	border-width: 4px;
+	display: inline-block;
+	margin-top: 0;
+	width: 80px;
+}
+.pagination span.prev, .next{
+	margin-right: 1rem;
+	border: 1px solid blue;
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+/**
+ * ===================================================================
+ * 3.2. PROFILE-MY ARTICLE (RESPONSIVE-DISPLAY)
+ *
+ * -------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 700px) {
+	.article .post-art {
+	margin-bottom: 2rem;
+}
+
+	.article img.post-art {
+	height: 11rem;
+}
+
+	.article .post-art p {
+	margin-top: -0.5rem;
+}
+
+	.article .post-art .meta {
+	margin-bottom: 2rem;
+}
+
+}
+
+/**
+ * ===================================================================
+ * 4. GALLERY
+ *
+ * -------------------------------------------------------------------
+ */
+
+ .container-fluid{
+	background-color: #ebebeb;
+ }
+
+.container-fluid .gallery h2{
+	margin-bottom: 2rem;
+	color: black
+}
+
+.container-fluid .container .gallery-img {
+	width: 84%;
+	margin-bottom: 3rem;
+}
+
+.container-fluid .container .gallery {
+	margin: auto;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.container-fluid .container .img-c {
+	width: 200px;
+	height: 200px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.container-fluid .container .img-w {
+   	position: absolute;
+    width: 100%;
+    height: 100%;
+  	background-size: cover;
+  	background-position: center;
+  	cursor: pointer;
+  	transition: transform ease-in-out 300ms;
+}
+
+.container-fluid .container .img-w img {
+  	display: none;
+}
+
+.container-fluid .container .img-c {
+  	transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.container-fluid .container .img-c:hover .img-w {
+  	transform: scale(1.08);
+  	transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.container-fluid .container .img-c.active {
+  	width: 100% !important;
+  	height: 100% !important;
+  	position: absolute;
+  	z-index: 2;
+}
+
+.container-fluid .container .img-c.postactive {
+  	position: absolute;
+  	z-index: 2;
+  	pointer-events: none;
+}
+
+.container-fluid .container .img-c.active.positioned {
+  	left: 0 !important;
+  	top: 0 !important;
+  	transition-delay: 50ms;
+}
+
+/**
+ * ===================================================================
+ * 4.1. GALLERY (RESPONSIVE-DISPLAY)
+ *
+ * -------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 1200px) {
+	.container-fluid .container .img-c {
+	width: 400px;
+	height: 200px;
+	margin-bottom: 1rem;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+	.container-fluid .container .gallery-img {
+	width: 70%;
+	margin-bottom: 3rem;
+}
+
+.container-fluid .container .img-c.active {
+  	width: 0% !important;
+  	height: 0% !important;
+
+}
+
+}
+
+/**
+ * ===================================================================
+ * 5. FOOTER
+ *
+ * -------------------------------------------------------------------
+ */
+.footer {
+	background-color: #151515;
+	padding: 1rem;
+}
+
+.footer h2 {
+	color: #bdc3c7;
+	margin-top: 2rem
+}
+
+.footer .form-control {
+	background-color: #151515;
+	border: none;
+	border-bottom: 1px solid grey;
+}
+
+.footer button {
+	width: 100%;
+	background-color: #ef5777;
+	color: white
+}
+
+.footer .form-control:hover {
+	border-bottom: 1px solid #ef5777;
+
+}
+
+.footer p {
+	color: #bdc3c7;
+}
+.footer .contact {
+	margin-top: 3rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+.footer .contact p{
+	line-height: 1.5rem;
+}
+
+.footer .contact i {
+	font-size: 3rem;
+	letter-spacing: 1rem;
+	color: #ef5777;
+	margin: 2rem
+}
+
+.footer .copyright p {
+	text-align: center
+}

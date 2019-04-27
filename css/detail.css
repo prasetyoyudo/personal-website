@@ -1,0 +1,200 @@
+/** 
+ * ===================================================================
+ ======================DOCUMENTATION CSS==============================
+ * 1.   ALL CLASSES
+ * 2.   BANNER HEADER
+ * 2.1. BANNER HEADER (RESPONSIVE DISPLAY)
+ * 3.   DETAIL-POST
+ * 4.   FOOTER
+ * ------------------------------------------------------------------- 
+ */
+
+
+/** 
+ * ===================================================================
+ * 1. ALL CLASSES
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+body {
+    background: url(../images/bg-blog.png);
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1366px) {
+  body {
+  background: url(../images/bg-blog.png);
+    height: 100%; 
+    background-attachment: scroll;
+  }
+}
+
+
+h2 {
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #ef5777;
+  font-weight: bold !important;
+  margin-top: 1rem;
+}
+
+/** 
+ * ===================================================================
+ * 2. BANNER HEADER
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.parallax-blog {
+  background-image: url('../images/blog/book.jpg');
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: lora-regular;
+} 
+
+.parallax-blog h2 {
+  font-size: 4rem
+}
+
+.parallax-blog i {
+  font-size: 3rem; 
+  letter-spacing: 1rem; 
+  color: white; 
+  margin-top: 1rem;   
+}
+
+.parallax-blog i:hover {
+  color: #ef5777;
+}
+
+/** 
+ * ===================================================================
+ * 2.1. BANNER HEADER(RESPONSIVE DISPLAY)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+@media only screen and (max-width: 700px) {
+    .parallax-blog {
+    height: 80%;
+    font-family: lora-regular;
+    background-attachment: scroll;
+
+  }
+
+    .parallax-blog h3{
+    font-size: 1.5rem;
+  }
+
+    .parallax-blog h2.sub-judul{
+    font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+    text-align: center;
+    font-size: 2rem;  
+  }
+
+    .parallax-blog i{
+    font-size: 1.8rem; 
+    letter-spacing: 1rem; 
+    color: white; 
+    margin-top: 0rem;
+  }
+
+}
+/** 
+ * ===================================================================
+ * 3. DETAIL-POST
+ *
+ * ------------------------------------------------------------------- 
+ */
+ .detail-post{
+  padding: 2rem;
+  margin-bottom: 2rem;
+ }
+ 
+.detail-post .meta, h2, img, p{
+  margin-bottom: 1rem;
+}
+
+.detail-post p{
+  text-align: justify;
+}
+
+.detail-post li {
+  list-style: none;
+}
+
+.form-comment h3, button {
+  margin-bottom: 2rem
+}
+
+
+
+/** 
+ * ===================================================================
+ * 4. FOOTER
+ *
+ * ------------------------------------------------------------------- 
+ */
+.footer {
+  background-color: #151515;
+  padding: 1rem;
+}
+
+.footer h2 {
+  color: #bdc3c7;
+  margin-top: 2rem
+}
+
+.footer .form-control {
+  background-color: #151515;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.footer button {
+  width: 100%;
+  background-color: #ef5777;
+  color: white
+}
+
+.footer .form-control:hover {
+  border-bottom: 1px solid #ef5777;
+
+}
+
+.footer p {
+  color: #bdc3c7;
+}
+.footer .contact {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer .contact p {
+  line-height: 1.5rem;
+}
+
+.footer .contact i {
+  font-size: 3rem; 
+  letter-spacing: 1rem; 
+  color: #ef5777; 
+  margin: 2rem 
+}
+
+.footer .copyright p {
+  text-align: center
+}

@@ -1,0 +1,468 @@
+/**
+ * ===================================================================
+ ======================DOCUMENTATION CSS==============================
+ * 1.	ALL CLASSES
+ * 2.	BANNER HEADER
+ * 2.1. BANNER HEADER (RESPONSIVE DISPLAY)
+ * 3. 	ABOUT ME
+ * 3.2	ABOUT ME (SKILL-PERCENTAGE)
+ * 4.	RESUME
+ * 4.1. RESUME (LINE VERTICAL)
+ * 4.2	RESUME(CONTENT)
+ * 5.	PORTFOLIO
+ * 6.	SERVICES
+ * 7.	FOOTER
+ * -------------------------------------------------------------------
+ */
+
+
+#loading {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/preload.gif) 50% no-repeat #fff;
+}
+
+/**
+ * ===================================================================
+ * 1. ALL CLASSES
+ *
+ * -------------------------------------------------------------------
+ */
+body {
+    background: url(../images/bg-blog.png);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1366px) {
+	body {
+		background: url(../images/bg-blog.png);
+    height: 100%;
+    background-attachment: fixed;
+	}
+}
+
+
+
+h2{
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+}
+
+h3{
+	color: #ef5777;
+	font-weight: bold !important;
+	margin-top: 1rem;
+	font-family: "poppins-regular", sans-serif;
+}
+
+/**
+ * ===================================================================
+ * 2. BANNER HEADER
+ *
+ * -------------------------------------------------------------------
+ */
+.parallax-home{
+    background-image: url('../images/bg-homes.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	font-family: lora-regular;
+}
+
+.parallax-home h3.sub-judul{
+	font-weight: bold !important;
+	color: white
+}
+
+.parallax-home .banner-button a {
+	display: block !important;
+}
+
+.parallax-home i{
+	font-size: 3rem;
+	letter-spacing: 1rem;
+	color: white;
+	margin-top: 5rem;
+}
+
+.parallax-home i:hover{
+	color: #ef5777;
+}
+
+/**
+ * ===================================================================
+ * 2.1. BANNER HEADER (RESPONSIVE DISPLAY)
+ *
+ * -------------------------------------------------------------------
+ */
+
+@media only screen and (max-width: 850px) {
+	.parallax-home {
+	background-image: url('../images/bg-homes.jpg');
+	height: 100%;
+	font-family: lora-regular;
+	background-attachment: scroll;
+	}
+
+	.parallax-home h3{
+	font-size: 1rem;
+	}
+
+	.parallax-home h2.sub-judul{
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	text-align: center;
+	font-size: 1rem;
+	}
+
+	.parallax-home i{
+	font-size: 2rem;
+	letter-spacing: 1rem;
+	color: white;
+	margin-top: 1rem;
+	}
+}
+
+/**
+ * ===================================================================
+ * 3. ABOUT-ME
+ *
+ * -------------------------------------------------------------------
+ */
+.profile h2{
+	color: #313131;
+	text-align: center
+}
+.profile h3 {
+	font-weight: bold !important;
+}
+
+.profile p {
+	font-size: 1rem
+}
+
+.profile-about {
+	font-family: "poppins-bold", sans-serif;
+	margin-bottom: 1rem;
+	text-align: center
+}
+
+.profile img.profile-about-img {
+	display: block;
+	height: 8rem;
+	width: 8rem;
+	border-radius: 50%;
+	margin: 1rem auto;
+}
+
+.profile .list-group li{
+	padding: 0.20rem;
+	list-style: none;
+}
+
+.profile strong {
+	font-family: "poppins-bold", sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+.profile span {
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: #888888;
+	font-size: 1rem;
+	line-height: 1rem;
+	margin-bottom: 1.2rem;
+}
+
+/**
+ * ===================================================================
+ * 3.1. ABOUT-ME (SKILL PERCENTAGE)
+ *
+ * -------------------------------------------------------------------
+ */
+.profile-container-percent {
+	width: 100%;
+    background-color: #bdc3c7;
+    margin-bottom: 1rem;
+}
+
+.profile-container-percent .skills {
+    text-align: right;
+    padding: 0.05rem;
+    color: white;
+}
+
+.profile-container-percent .html {
+	width: 90%;
+	background-color: #2c3e50;
+}
+
+.profile-container-percent .css {
+	width: 80%;
+	background-color: #2c3e50;
+}
+
+.profile-container-percent .jQuery {
+	width: 80%;
+	background-color: #2c3e50;
+}
+
+.profile-container-percent .js {width: 65%;
+	background-color: #2c3e50;
+}
+
+.profile-container-percent .php {
+	width: 60%;
+	background-color: #2c3e50;
+}
+
+.contact button{
+	margin-top: 1rem;
+	padding: 1rem;
+	width: 40%;
+}
+
+/**
+ * ===================================================================
+ * 4. RESUME
+ *
+ * -------------------------------------------------------------------
+ */
+.resume {
+	background-color: #ebebeb;
+	text-align: justify;
+	padding: 4rem;
+	margin-top: 5rem
+}
+
+.resume h2 {
+	color : #313131
+}
+
+.resume h3{
+	font-weight: bold !important;
+}
+
+/**
+ * ===================================================================
+ * 4.1. RESUME(LINE VERTICAL)
+ *
+ * -------------------------------------------------------------------
+ */
+.resume .line {
+   border-color: #ccc !important;
+   margin-right: 0rem;
+}
+
+.resume .word {
+	font-size: 3rem;
+	color: black;
+}
+
+.resume span.border-right{
+	margin-bottom: -0.2rem !important;
+}
+
+.resume i.fa-graduation-cap::before {
+    content: "\f19d";
+    margin-left: -2.8rem;
+
+}
+
+/**
+ * ===================================================================
+ * 4.2. RESUME(CONTENT)
+ *
+ * -------------------------------------------------------------------
+ */
+.resume strong {
+	font-family: "poppins-bold", sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+.resume span {
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: #6e6e7e;
+	font-size: 1rem;
+	margin-bottom: 1.2rem
+}
+
+.resume p{
+	margin-bottom: 6rem;
+	 text-align: center;
+}
+
+/**
+ * ===================================================================
+ * 5. PORTFOLIO
+ *
+ * -------------------------------------------------------------------
+ */
+.container-portfolio {
+    position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-portfolio {
+	width: 50%
+}
+
+/**
+ * ===================================================================
+ * 6. SERVICE
+ *
+ * -------------------------------------------------------------------
+ */
+.service {
+	text-align: justify;
+	padding: 3rem;
+	margin: 0rem;
+	background: url(../images/bg-serv.jpg);
+	color: #bdc3c7;
+}
+
+.service p{
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.service i {
+	font-size: 3rem;
+	letter-spacing: 1rem;
+	color: #ef5777;
+	margin: 2rem
+}
+
+@media only screen and (max-width: 850px) {
+	.service {
+	text-align: justify;
+	padding: 3rem;
+	margin: 0rem;
+	background: url(../images/bg-serv.jpg);
+	color: #bdc3c7;
+}
+
+
+}
+/**
+ * ===================================================================
+ * 7. FOOTER
+ *
+ * -------------------------------------------------------------------
+ */
+.footer{
+	background-color: #151515;
+	padding: 1rem;
+}
+
+.footer h2{
+	margin-top: 3rem;
+	color: #bdc3c7;
+}
+
+.footer .form-control {
+	background-color: #151515;
+	border: none;
+	border-bottom: 1px solid grey;
+}
+
+.footer button {
+	width: 100%;
+	background-color: #ef5777;
+	color: white
+}
+
+.footer .form-control:hover {
+	border-bottom: 1px solid #ef5777;
+
+}
+
+.footer p{
+	color: #bdc3c7;
+}
+
+.footer .contact {
+	margin-top: 3rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+.footer .contact p{
+	line-height: 1.5rem;
+}
+
+.footer .contact i{
+	font-size: 3rem;
+	letter-spacing: 1rem;
+	color: #ef5777;
+	margin: 2rem
+}
+
+.footer .copyright p{
+	text-align: center
+}
+
+
+#go-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 600;
+	display: none;
+}
+#go-top a {
+	text-decoration: none;
+	border: 0 none;
+	display: block;
+	height: 6.6rem;
+	width: 6rem;
+	line-height: 6.6rem;
+	text-align: center;
+	background: #cc005f;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#go-top a i {
+	font-size: 1.6rem;
+	line-height: inherit;
+}
+#go-top a:hover {
+	background: #000000;
+}
