@@ -1,9 +1,8 @@
   <!-- HEADER -->
-    <?php 
+    <?php
 
     ob_start();
     include "includes/header.php";
-    include "includes/menu.php";
     include 'includes/config.php';
     include 'function/function.php';
     date_default_timezone_set('Asia/Jakarta');
@@ -11,7 +10,7 @@
     ?>
     <!-- CONTENT -->
         <div id="loading"></div>
-    <?php 
+    <?php
 
     if (isset($_GET['blog']) || isset($_GET['page'])) {
         include 'pages/blog.php';
@@ -23,8 +22,8 @@
     ?>
 
     <!-- FOOTER  -->
-    <?php include 'includes/footer.php'; ?> 
-    
+    <?php include 'includes/footer.php'; ?>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
@@ -38,9 +37,8 @@
   </body>
 </html>
 
-    <?php  
+    <?php
 
     mysqli_close($conn);
     ob_end_flush();
     ?>
-
